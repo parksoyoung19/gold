@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* **************************** //필수 CSS 수정 및 삭제 불가 **************************** */
+
+/* tag reset */
+
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
+html { width:100%; height:100%; }
+body,code { font:0.75em Verdana,Dotum,AppleGothic,sans-serif; color:#353535; background:#fff; }
+body { min-width:1480px; }
+body#popup { min-width:0; }
+li { list-style:none; }
+img,fieldset { border:none; vertical-align:top; }
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+caption { display:none; }
+th,td { border:0; vertical-align:top; }
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; }
+hr.layout { display:none; }
+a { text-decoration:none; color:#000; }
+a:hover { text-decoration:underline; }
+a:active { text-decoration:none; }
+.objHidden { visibility:hidden; position:absolute; left:-1000px; top:-1000px; height:0; width:0; }
+#content_CONTAINER table, #bi_inquire_content_CONTAINER table { border:0; margin:0 0 -1px; }
+#content_CONTAINER table:before, #bi_inquire_content_CONTAINER table:before { display:none; }
+#content_CONTAINER td, #bi_inquire_content_CONTAINER td { width:auto !important; padding:0; }
+table.nneditor-table { width:auto !important; }
+
+/* 결제진행바 */
+#progressPaybarBackground { position:absolute; z-index:99; left:0; top:0; width:100%; height:100%; }
+#progressPaybarView { position:absolute; z-index:100; top:160px; left:20px; width:471px; font-size:12px; }
+#progressPaybarView .box { height:180px; background:url(//img.cafe24.com/images/ec_hosting/popup/layer_guide/bg_layer_box1.gif) 0 0 no-repeat; }
+#progressPaybarView .box .graph { padding:15px 0 0 0; text-align:center;}
+#progressPaybarView .box .graph span { display:block; text-align:center; margin:20px 0; }
+#progressPaybarView .box .txt { text-align:center; padding:15px 0 0; color:#555555; }
+div.layerProgress { filter:alpha(opacity=40); opacity:0.4; -moz-opacity:0.4; background-color:#999; }
+
+/* contents */
+#skipNavigation {position:absolute; top:0; left:0; z-index:100; width:100%; height:0;}
+#skipNavigation p, #skipNavigation ul, #skipNavigation ul li {height:0;}
+#skipNavigation p a {position:absolute; left:0; top:0; display:block; overflow:hidden; width:1px; height:1px; margin-left:-1px; margin-bottom:-1px; text-align:center; color:#000; white-space:nowrap;}
+#skipNavigation p a:focus, #skipNavigation p a:hover, #skipNavigation p a:active {width:100%; height:auto; padding:10px 0; background:#c4122f; color:#fff; z-index:100;}
+
+.displaynone { display:none; }
+
+
+.dimmed { position:fixed; top:0; left:0; z-index:99; width:100%; height:100%; background:#fff; opacity:0.8; filter:alpha(opacity=80); }
+
+/* **************************** 필수 CSS 수정 및 삭제 불가 **************************** */
+.box-sizing{box-sizing:border-box;}
+.box-sizing *{box-sizing:border-box;}
+#mcategory{border-right:0!important;}
+#mheader .top_flag{display:none;}
+#mheader .header_sec01 .fleft ul li.top_rank{display:none;}
+#mheader .header_sec02 .top_logo{padding-top:10px!important;}
+#mheader .header_sec02 .top_logo a{width:375px;display:block;margin:0 auto;}
+#mheader .header_sec02 .top_logo a img{width:100%;}
+#slideCateList .categoryList li a{font-weight:500!important;}
+
+/* 테이블 */
+.tableWrap{margin-bottom:80px;}
+.tableWrap > *{width:100%;}
+.tableWrap h2.title{color:#fff;font-size:20px;margin-bottom:15px;}
+.tableWrap .wrap{margin-left:40px;}
+.tableWrap .wrap table{margin-bottom:15px;}
+.tableWrap .wrap table:last-child{margin-bottom:0;}
+table{width:100%;border-bottom:1px solid #dbdbdb;border-collapse:collapse;}
+.tableWrap tr{border-bottom:1px solid #BEC9D4;}
+.tableWrap.banner-table{height:100%;background:rgba(0,0,0,0.8);position:absolute;top:0;left:5%;z-index:1;margin-bottom:0;}
+.tableWrap.banner-table > *{box-sizing:border-box;}
+.tableWrap.banner-table h2.title{display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,0.6);padding:10px 10px 15px 10px;margin-bottom:0;}
+.tableWrap.banner-table h2.title span{font-size:12px;}
+.tableWrap.banner-table table{border-bottom:0;padding:10px;}
+.tableWrap.banner-table tr{border-bottom:0;}
+.tableWrap.banner-table th, .tableWrap.banner-table td{color:#fff;font-size:14px;font-weight:bold;padding:8px 10px;}
+.tableWrap.banner-table th{background:none;font-size:16px;}
+.tableWrap.banner-table td:first-child{color:#fff;}
+.tableWrap th, .tableWrap td{font-size:16px;font-weight:bold;padding:10px 20px;vertical-align:middle;}
+.tableWrap th{background:#e9eff5;color:#424952;}
+.tableWrap th span{font-size:14px;}
+.tableWrap td{color:#757575;text-align:center;vertical-align:middle;}
+.tableWrap td p{font-size:14px;margin-bottom:5px;}
+.tableWrap td p ~ span{font-size:12px;position:relative;}
+.tableWrap td p + span:before{position:absolute;bottom:2px;left:-20px;}
+.tableWrap td .up:before{content:"▲";color:red;}
+.tableWrap td .down:before{content:"▼";color:#297fff;}
+.red{color:#f00!important;}
+.blue{color:#297fff!important;}
+.rowtd *{color:#757575!important;text-align:center!important;}
+.tal{text-align:left!important;}
+h2.title{margin-bottom: 24px;font-size: 24px;font-weight: 700;text-align: left;}
+
+/* 탭 */
+.tab ul{display:flex;align-items:center;flex-wrap:wrap;margin-bottom:50px;}
+.tab ul > li{width:calc(100% / 6);display:flex;justify-content:center;align-items:center;background:#fcfcfc;color:#666;font-size:16px;font-weight:500;text-align:center;border:2px solid #ddd;border-right-width:0;border-bottom-width:0;border-radius:4px 4px 0 0;margin-bottom:4px;}
+.tab ul > li:last-child{border-right-width:2px;}
+.tab ul > li.on{background:#fff;border-color:#ff6e0e;border-right-width:2px;}
+.tab ul > li.on + li{border-left-width:0;}
+.tab ul > li:nth-child(6){border-right-width:2px;}
+.tab ul > li:nth-child(11){border-right-width:2px;margin-right:calc(100% / 6);}
+.tab ul > li a{width:100%;display:block;padding:25px 5px;cursor:pointer;}
+.tab ul > li.on a{color:#ff6e0e;}
+.tabs{display:none;}
+.tabs.on{display:block;}
+.tabs .graphWrap{margin-bottom:30px;}
